@@ -1,120 +1,61 @@
-* {
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
 }
 
 header {
-  background-color: #6d4c41;
-  color: #fff;
+  background-color: #9c825a;
+  color: white;
+  padding: 20px;
   text-align: center;
-  padding: 2rem 1rem;
 }
 
-header h1 {
-  font-size: 2.5rem;
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #e0c383;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
-header p {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #007c35;
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
 .item {
-  background-color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-.item:hover {
-  transform: scale(1.03);
+  width: 250px;
+  text-align: center;
 }
 
 .item img {
   width: 100%;
   height: auto;
-  display: block;
-}
-
-.item h2 {
-  font-size: 1.5rem;
-  margin: 1rem;
-}
-
-.item p {
-  font-size: 1rem;
-  margin: 0 1rem 1rem;
+  cursor: pointer;
 }
 
 .price {
   font-weight: bold;
-  color: #388e3c;
-  font-size: 1.2rem;
-  margin: 0 1rem 1rem;
-  display: block;
-}
-
-footer {
-  text-align: center;
-  background-color: #eee;
-  padding: 1rem;
-  font-size: 0.9rem;
-}
-
-/* Estilo da modal (imagem em tela cheia) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  padding-top: 60px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.9);
-}
-
-.modal-content {
-  margin: auto;
-  display: block;
-  max-width: 90%;
-  max-height: 90%;
-}
-
-.modal-content, .modal {
-  animation-name: zoom;
-  animation-duration: 0.3s;
-}
-
-@keyframes zoom {
-  from {transform: scale(0)}
-  to {transform: scale(1)}
-}
-
-.close {
-  position: absolute;
-  top: 30px;
-  right: 35px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
+  color: #005e26;
 }

@@ -1,0 +1,110 @@
+/* Fontes e base */
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffaf3;
+  color: #3b2f2f;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background: linear-gradient(#49796b, #8fbc8f);
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.logo {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-size: 1.1rem;
+  margin-top: 0;
+  font-weight: 400;
+}
+
+/* Menu */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: #2e8b57;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.menu a:hover {
+  background-color: #1e6f47;
+}
+
+/* Conteúdo principal */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.texto-sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2e8b57;
+  border-bottom: 2px solid #a0522d;
+  display: inline-block;
+}
+
+.texto-sobre p {
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+/* Rodapé */
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  border-top: 1px solid #ccc;
+}
+
+.contato {
+  background-color: #f4f1ec;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contato h2 {
+  color: #2e8b57;
+  margin-bottom: 15px;
+}
+
+.contato p {
+  font-size: 1rem;
+  margin: 6px 0;
+  color: #333;
+}
+
+.contato a {
+  color: #2e8b57;
+  text-decoration: none;
+}
+
+.contato a:hover {
+  text-decoration: underline;
+}

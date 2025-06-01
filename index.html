@@ -2,149 +2,61 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Artesanato Amazônico</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DF Artesanatos - Sobre</title>
+  <link rel="stylesheet" href="menustyle.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
-<div id="modal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="modal-img" alt="Imagem em destaque">
-</div>
-
-<script>
-  // Seleciona todas as imagens da galeria
-  const imagens = document.querySelectorAll('.gallery img');
-  const modal = document.getElementById('modal');
-  const modalImg = document.getElementById('modal-img');
-
-  imagens.forEach(img => {
-    img.addEventListener('click', () => {
-      modal.style.display = 'block';
-      modalImg.src = img.src;
-      modalImg.alt = img.alt;
-    });
-  });
-
-  function closeModal() {
-    modal.style.display = 'none';
-  }
-
-  // Fecha o modal ao clicar fora da imagem
-  modal.addEventListener('click', function(e) {
-    if (e.target === modal) closeModal();
-  });
-</script>
-
 <body>
-  <header>
-    <h1>DF Artesanatos</h1>
-    <p>Peças criadas a partir do cipó titica, trançado feito com tradição familiar</p>
+  <header class="cabecalho">
+    <div class="container">
+      <img src="/img/logo.png" alt="Logo DF Artesanatos" class="logo" />
+      <h1>DF Artesanatos</h1>
+      <p class="subtitulo">Artesanato tradicional com cipó titica direto de Parintins, Amazonas.</p>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Sobre</a></li>
+          <li><a href="cadeira.html">Cadeiras</a></li>
+          <li><a href="luminarias.html">Luminárias</a></li>
+          <li><a href="decoracao.html">Decoração em Geral</a></li>
+          <li><a href="cestas.html">Cestas</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="gallery">
-    <div class="item">
-      <img src="img/supla.jpeg" alt="Enfeite de parede" />
-      <h2>Jogo de enfeite de parede</h2>
-      <p>Jogo de enfeite de parede, com 3 tamanhos, médio, pequeno e grande</p>
-      <span class="price">R$ 100,00</span>
-    </div>
+  <main class="sobre">
+    <section class="container">
+      <article class="texto-sobre">
+        <h2>Sobre a Instituição</h2>
+        <p>
+          A <strong>DF Artesanatos</strong> foi fundada em 2016, mas sua história é muito mais antiga. Nossas raízes estão firmadas em um legado cultural transmitido por gerações, onde o conhecimento do trançado com <strong>cipó titica</strong> é passado de pais para filhos como um verdadeiro tesouro familiar.
+        </p>
+        <p>
+          Localizada em <strong>Parintins, no coração da Amazônia</strong>, a DF Artesanatos se dedica à criação de peças que aliam <strong>arte, cultura e funcionalidade</strong>, com um olhar atento à sustentabilidade e à valorização da matéria-prima local.
+        </p>
+        <p>
+          Nosso principal propósito é <strong>preservar e promover o saber ancestral</strong> do artesanato amazônico, oferecendo ao público peças exclusivas que refletem a beleza natural da floresta e a riqueza cultural da região.
+        </p>
+        <p>
+          Ao adquirir um de nossos produtos, você leva para casa muito mais do que um objeto decorativo ou utilitário — leva consigo uma história viva, feita com mãos que trabalham com amor, respeito e orgulho de suas origens.
+        </p>
+      </article>
+    </section>
 
-    <div class="item">
-      <img src="img/luminaria.jpeg" alt="Luminária artesanal" />
-      <h2>Luminária</h2>
-      <p>Luminária com 30 cm de comprimento</p>
-      <span class="price">R$ 40,00</span>
-    </div>
-
-    <div class="item">
-      <img src="img/poltrona descascada.jpeg" alt="Poltrona tecida com cipó titica e base de ferro" />
-      <h2>Poltrona de cipó em casca</h2>
-      <p>Poltrona tecida com cipó titica e base de ferro.</p>
-      <span class="price">R$ 500,00</span>
-    </div>
-
-    <div class="item">
-      <img src="img//poltrona com casca.jpeg" alt="Poltrona tecida com cipó titica e base de ferro" />
-      <h2>Poltrona de cipó rustico</h2>
-      <p>Poltrona tecida com cipó titica com casca e base de ferro.</p>
-      <span class="price">R$ 500,00</span>
-    </div>
-
-    <div class="item">
-      <img src="img/luminaria2.jpeg" alt="Luminaria 2" />
-      <h2>Luminária de cipó</h2>
-      <p>Luminária tecida com cipó titica, ideal para decoração</p>
-      <span class="price">R$ 40,00</span>
-    </div>
-
-    <div class="item">
-      <img src="img/banqueta.jpeg" alt="banqueta" />
-      <h2>Banqueta</h2>
-      <p>Banqueta tecida com cipó com base de madeira, feita para ser utilizada em balcões</p>
-      <span class="price">R$ 200,00</span>
-    </div>
-
-    <div class="item">
-      <img src="img/balanço.jpeg" alt="balanço" />
-      <h2>balanço</h2>
-      <p>Balanço tecido com cipó e base de ferro</p>
-      <span class="price">R$ 1000,00</span>
-    </div>
-
-    <div class="item">
-      <img src="img/paneiro.jpeg" alt="paneiro" />
-      <h2>Paneiro</h2>
-      <p>Paneiros pequenos de vários tamanhos</p>
-      <span class="price">A partir de 10,00</span>
-    </div>
-
-    <div class="item">
-      <img src="img/mandala.jpeg" alt="mandala" />
-      <h2>Mandala</h2>
-      <p>Mandala para decoração de parede</p>
-      <span class="price">80,00</span>
-    </div>
-
-    <div class="item">
-      <img src="img/jogo de mandala.jpeg" alt="jogo de mandala" />
-      <h2>Jogo de Mandala</h2>
-      <p>Mandala para decoração de parede, com 3 peças</p>
-      <span class="price">250,00</span>
-    </div>
-
-    <div class="item">
-      <img src="img/boi.jpeg" alt="boi" />
-      <h2>Jogo de Mandala</h2>
-      <p>Perfil de boi bumbá tecido de cipó com base de ferro</p>
-      <span class="price">250,00</span>
-    </div>
-
-    <div class="item">
-      <img src="img/cadeira.jpeg" alt="cadeira" />
-      <h2>Cadeira</h2>
-      <p>Cadeira tecida com cipó com base de ferro</p>
-      <span class="price">600,00</span>
-    </div>
-
-    <div class="item">
-      <img src="img/mandala2.jpeg" alt="cadeira" />
-      <h2>Mandala</h2>
-      <p>Mandala tecida com cipó para enfeite de parede</p>
-      <span class="price">100,00</span>
-    </div>
-
-    <div class="item">
-      <img src="img/cesta de piquinique.jpeg" alt="cesta de piquinique" />
-      <h2>Cesta de piquinique</h2>
-      <p>Cesta de piquinique com duas tampas, tecida com cipó titica e base de duratex</p>
-      <span class="price">150,00</span>
-    </div>
+    <section class="contato">
+      <h2>Contato</h2>
+      <p><strong>Endereço:</strong> Rua 24 de Janeiro, nº 1554, Bairro Itaúna II, Parintins - AM, CEP 69152-120</p>
+      <p><strong>Telefone/WhatsApp:</strong> (92) 99262-6673</p>
+      <p><strong>Email:</strong> artesanatodf3@gmail.com</p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/d.f_artesanatos" target="_blank">@df_artesanatos</a></p>
+    </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2025 DF Artesanato | Feito com amor em Parintins</p>
+    <p>&copy; 2025 DF Artesanatos | Feito com amor em Parintins, Amazonas</p>
   </footer>
 </body>
 </html>
